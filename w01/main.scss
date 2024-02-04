@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+//Variables
+$border: 1px solid #d0d0d0;
+$color-six: #666;
+
+@mixin font-styles {
+  font-family: "Lora", serif;
+}
+
+@mixin typography($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #333; }
+
+header {
+  text-align: center;
+  padding-top: 1em; }
+
+header h1 {
+  padding-bottom: 1em; }
+
+h1 a {
+  @include font-styles();
+  color: black;
+  text-decoration: none;
+  font-size: 4.5rem; }
+
+nav {
+  @include font-styles();
+  font-size: 1.4rem;
+  line-height: 2.5;
+  border-top: $border;
+  border-bottom: $border; 
+  a:active {
+    color: #DEB887; }
+  a:hover {
+    color: #00ddff; }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    li a {
+      color: $color-six;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold; 
+}}}
+
+h2 {
+  @include typography(1.8rem, normal);
+  @include font-styles();
+  text-align: right;
+  padding-top: 1em;
+  padding-bottom: .5em; }
+
+h2.post-date {
+  border-bottom: $border;
+  @include typography(1.5rem, normal);
+  text-transform: uppercase; }
+
+.post-content h2 a {
+  @include font-styles();
+  text-decoration: none; }
+
+.post-content h2 {
+  text-align: left;
+  margin: 0;
+  padding-top: .5em; }
+
+figure {
+  display: flex;
+  justify-content: center; }
+
+p {
+  color: black;
+  @include typography(1.2rem, normal); 
+}
+
+.post-content a {
+    color: $color-six;
+    text-decoration: none;}
+    a:active {
+      color: #DEB887; }
+    a:hover {
+      color: #00ddff; }
+
+@media screen and (min-width: 850px) {
+  main {
+    display: grid; }
+
+  nav {
+    text-align: right;
+    margin-bottom: 30px; }
+
+  h2.post-date {
+    font-size: 1.5rem;
+    color: black;
+    border-right: $border;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  .post-content {
+    border-bottom: $border;
+    padding-left: 20px;
+    margin-top: 8px;
+    padding-bottom: 10px; }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px; }
+
+  article {
+    display: grid;
+    grid-template-columns: 20% 80%; }
+
+  p {
+    font-size: 1.2rem; }
+
+  .post-date {
+    padding-right: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
