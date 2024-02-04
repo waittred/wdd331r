@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-body {
-  font-family: "Helvetica", "Arial", sans-serif;
-  color: #333;
-}
-
 header {
   text-align: center;
   padding-top: 1em;
@@ -47,7 +42,6 @@ nav ul li a {
 
 h2 {
   font-size: 1.8rem;
-  font-weight: normal;
   font-family: "Lora", serif;
   text-align: right;
   padding-top: 1em;
@@ -56,8 +50,6 @@ h2 {
 
 h2.post-date {
   border-bottom: 1px solid #d0d0d0;
-  font-size: 1.5rem;
-  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -79,21 +71,12 @@ figure {
 
 p {
   color: black;
-  font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .post-content a {
   color: #666;
   text-decoration: none;
-}
-
-a:active {
-  color: #DEB887;
-}
-
-a:hover {
-  color: #00ddff;
 }
 
 @media screen and (min-width: 850px) {
